@@ -1,0 +1,157 @@
+.card {
+  margin: 0 0 40px 0;
+  padding: 0;
+  width: 100%;
+  height: 134px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+.card:last-child {
+  margin: 0 0 10px 0;
+}
+.card__image {
+  margin: 6px 6px 6px 0;
+  padding: 0;
+  width: 220px;
+  height: 122px;
+}
+.card__description {
+  margin: 0;
+  padding: 0 0 0 22px;
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+}
+.card__title {
+  margin: 22px 0 13px 0;
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.card__time {
+  margin: 0 0 30px 0;
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #a0a0a0;
+}
+.card__like_liked {
+  margin: 0;
+  padding: 0;
+  width: 14px;
+  height: 12px;
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-image: url(../../images/cardLike.svg);
+}
+.card__like_dislike {
+  margin: 0;
+  padding: 0;
+  width: 14px;
+  height: 12px;
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-image: url(../../images/cardDislike.svg);
+}
+.card__like {
+  margin: 0;
+  padding: 0;
+  width: 14px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url(../../images/cardHeart.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+.card__like_liked:hover {
+  opacity: 0.6;
+}
+.card__like:hover {
+  opacity: 0.6;
+}
+.card__like_dislike:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 550px) {
+  .card {
+    box-sizing: border-box;
+    margin: 0 0 40px 0;
+    padding: 0;
+    width: 100%;
+    min-height: 232px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "image"
+      "description";
+  }
+  .card__description {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 36px 0 12px;
+    width: 300px;
+    grid-area: description;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "title heart"
+      "time time";
+  }
+  .card__like {
+    grid-area: heart;
+    align-self: right;
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+  .card__title {
+    grid-area: title;
+    align-self: left;
+    padding: 0;
+    margin: 14px 0 8px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .card__like_liked {
+    margin: 16px 0 0 0;
+  }
+  .card__like_dislike {
+    margin: 16px 0 0 0;
+  }
+  .card__time {
+    grid-area: time;
+    align-self: left;
+  }
+  .card__image {
+    padding: 0;
+    margin: 0;
+    grid-area: image;
+    align-self: center;
+    width: 300px;
+    height: 168px;
+  }
+}

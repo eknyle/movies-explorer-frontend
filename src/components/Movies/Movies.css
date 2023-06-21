@@ -1,0 +1,50 @@
+.movies {
+  margin: 0;
+  padding: min(18%, 70px) min(18%, 70px) 80px min(18%, 70px);
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.movies__button {
+  width: 320px;
+  min-width: 240px;
+  height: 36px;
+  margin: 50px 0 0 0;
+  align-self: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+.movies__button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .movies {
+    margin: 0;
+    padding: min(18%, 60px) min(18%, 30px) 30px min(18%, 70px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .movies {
+    margin: 0;
+    padding: min(18%, 40px) min(18%, 10px) 20px min(18%, 10px);
+  }
+}
+@media screen and (max-width: 320px) {
+  .movies__button {
+    margin: 50px 0 40px 0;
+    width: 240px;
+  }
+}

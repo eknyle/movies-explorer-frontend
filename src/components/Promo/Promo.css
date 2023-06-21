@@ -1,0 +1,154 @@
+.landing {
+    padding: 0;
+    margin: -1px 0 0 0;
+    width: 100%;
+    background-color: #5c5c5c;
+  }
+  .landing__container {
+    padding: 75px min(18%, 70px) 50px min(18%, 70px);
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5c5c5c;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "title right"
+      "description right"
+      "button right";
+  }
+  .landing__title {
+    white-space: pre-line;
+    padding: 0;
+    margin: 0px 0 36px 0;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(calc((100vw - 320px) / (1280 - 320) * (50 - 30) + 30px), 50px);
+    line-height: 116%;
+    color: #ffffff;
+    text-align: left;
+    grid-area: title;
+  }
+  .landing__description {
+    white-space: pre-line;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    text-align: left;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0px 0 146px 0px;
+    grid-area: description;
+  }
+  .landing__button {
+    padding: 0;
+    margin: 0px 0px 25px 0px;
+    width: 129px;
+    height: 36px;
+    opacity: 0.6;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    color: #ffffff;
+    grid-area: button;
+  }
+  .landing__button:hover {
+    opacity: 0.6;
+  }
+  .landing__logo {
+    margin: 0px 0px 145px 0px;
+    padding: 0;
+    background-image: url(../../images/landing-logo.png);
+    min-width: 210px;
+    min-height: 206px;
+    width: 310px;
+    height: 304px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: top;
+    justify-content: right;
+    grid-area: right;
+  }
+  @media screen and (max-width: 768px) {
+    .landing__container {
+      padding: 140px 0 66px 0;
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+        "logo"
+        "title"
+        "description"
+        "button";
+      justify-items: center;
+    }
+    .landing__title {
+      font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+      font-style: normal;
+      line-height: 50px;
+      text-align: center;
+      margin: 0 min(17%, 44px) 22px min(17%, 44px);
+      grid-area: title;
+      white-space: normal;
+    }
+    .landing__description {
+      margin: 0 min(33%, 254px) 92px min(33%, 254px);
+      text-align: center;
+      grid-area: description;
+      white-space: normal;
+    }
+    .landing__button {
+      margin: 0px 0px 10px 0px;
+      grid-area: button;
+    }
+    .landing__logo {
+      margin: 0px 0px 48px 0px;
+      align-self: center;
+      grid-area: logo;
+    }
+  }
+  @media screen and (max-width: 343px) {
+    .landing__container {
+      padding: 70px 0 0 0;
+    }
+    .landing__title {
+      font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: -0.04em;
+      margin: 0 10px 24px 10px;
+      grid-area: title;
+    }
+    .landing__description {
+      margin: 0 30px 80px 30px;
+      text-align: center;
+      grid-area: description;
+    }
+    .landing__button {
+      margin: 0px 0px 30px 0px;
+      grid-area: button;
+    }
+    .landing__logo {
+      margin: 0px 0px 44px 0px;
+      width: 210px;
+      height: 206px;
+      align-self: center;
+      grid-area: logo;
+    }
+  }

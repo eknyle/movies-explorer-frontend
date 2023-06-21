@@ -1,0 +1,201 @@
+.about-project {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .about-project__container {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 110px min(18%, 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: #ffffff;
+  }
+  .about-project__subheader {
+    padding: 0;
+    margin: 0 0 23px 0;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    grid-area: about;
+  }
+  .about-project__line {
+    padding: 0;
+    margin: 0 0 70px 0;
+    width: min(100%, 1140px);
+    height: 1px;
+    background-color: #000000;
+    grid-area: line;
+  }
+  .about-project__header {
+    padding: 0;
+    margin: 0 0 26px 0;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #000000;
+  }
+  .about-project__description {
+    padding: 0;
+    margin: 0 0 110px 0;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #000000;
+  }
+  .about-project__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .about-project__list-item {
+    margin: 0 40px 0 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    width: min(50%, 550px);
+    min-width: 284px;
+  }
+  .about-project__list-item:last-child {
+    margin: 0;
+  }
+  .about-project__schema {
+    max-width: 1140px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .about-project__back {
+    padding: 0;
+    margin: 0 0 14px 0;
+    width: 21.3%;
+    height: 36px;
+    min-width: 100px;
+    background-color: #2be080;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+  }
+  .about-project__front {
+    padding: 0;
+    margin: 0 0 14px 0;
+    width: 80%;
+    min-width: 184px;
+    height: 36px;
+    background-color: #f2f2f2;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+  }
+  .about-project__back-subtitle {
+    width: 228px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 121%;
+    color: #a0a0a0;
+    white-space: pre-line;
+  }
+  .about-project__front-subtitle {
+    width: 912px;
+    min-width: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 121%;
+    color: #a0a0a0;
+    white-space: pre-line;
+  }
+  @media screen and (max-width: 768px) {
+    .about-project__container {
+      padding: 90px min(7%, 50px);
+    }
+    .about-project__header {
+      margin: 0 0 22px 0;
+      white-space: pre-line;
+    }
+    .about-project__description {
+      font-size: 12px;
+      line-height: 150%;
+      margin: 0 0 93px 0;
+      white-space: normal;
+    }
+    .about-project__list-item {
+      margin: 0 30px 0 0;
+      width: 47%;
+    }
+    .about-project__list {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 343px) {
+    .about-project__container {
+      padding: 70px min(6%, 18px);
+    }
+    .about-project__title {
+      margin: 0 0 28px 0;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .about-project__line {
+      margin-bottom: 60px;
+    }
+    .about-project__header {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 16px 0;
+    }
+    .about-project__description {
+      font-size: 11px;
+      line-height: 145%;
+      margin: 0;
+      white-space: normal;
+    }
+    .about-project__list {
+      flex-flow: column;
+    }
+    .about-project__list-item {
+      margin: 0 0px 56px 0;
+    }
+    .about-project__list-item:last-child {
+      margin: 0 0 60px 0;
+    }
+    .about-project__schema:last-child {
+      margin: 0 0 70px 0;
+    }
+  }
