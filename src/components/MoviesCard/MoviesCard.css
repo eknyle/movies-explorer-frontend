@@ -42,7 +42,7 @@
   line-height: 13px;
   color: #a0a0a0;
 }
-.card__like_liked {
+.card__liked {
   margin: 0;
   padding: 0;
   width: 14px;
@@ -55,7 +55,7 @@
   border: none;
   background-image: url(../../images/cardLike.svg);
 }
-.card__like_dislike {
+.card__disliked {
   margin: 0;
   padding: 0;
   width: 14px;
@@ -81,13 +81,13 @@
   cursor: pointer;
   border: none;
 }
-.card__like_liked:hover {
+.card__liked:hover {
   opacity: 0.6;
 }
 .card__like:hover {
   opacity: 0.6;
 }
-.card__like_dislike:hover {
+.card__disliked:hover {
   opacity: 0.6;
 }
 @media screen and (max-width: 768px) {
@@ -123,28 +123,25 @@
   }
   .card__like {
     grid-area: heart;
-    align-self: right;
     padding: 0;
     margin: 16px 0 0 0;
   }
   .card__title {
     grid-area: title;
-    align-self: left;
     padding: 0;
     margin: 14px 0 8px 0;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
   }
-  .card__like_liked {
+  .card__liked {
     margin: 16px 0 0 0;
   }
-  .card__like_dislike {
+  .card__disliked {
     margin: 16px 0 0 0;
   }
   .card__time {
     grid-area: time;
-    align-self: left;
   }
   .card__image {
     padding: 0;

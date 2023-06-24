@@ -8,7 +8,7 @@ function FilterCheckbox() {
 
   return (
     <div className="filter">
-        <div className={checkboxStyle} type="checkbox" onClick={handleChecked} ></div>
+        <div className={checkboxStyle} onClick={handleChecked} ></div>
         <span>Короткометражки</span>
     </div>
   )

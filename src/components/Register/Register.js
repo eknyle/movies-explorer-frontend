@@ -28,7 +28,9 @@ function Register({ onRegister }) {
   }
   return (
     <main className="register" id="register">
-      <div className="register__logo"></div>
+      <Link className="register__link" to="/">
+        <div className="register__logo"></div>
+      </Link>
       <h2 className="register__title">Добро пожаловать!</h2>
       <form className="register__form" onSubmit={handleRegister}>
         <p className="register__label">Имя</p>
@@ -75,7 +77,7 @@ function Register({ onRegister }) {
         >
           Зарегистрироваться
         </button>
-        <p  className="register__description">
+        <p className="register__description">
           Уже зарегистрированы?
           <Link className="register__link" to="/signin">
             Войти

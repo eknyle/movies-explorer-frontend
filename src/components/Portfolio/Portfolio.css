@@ -63,12 +63,13 @@
   }
   @media screen and (max-width: 530px) {
     .about__portfolio-title {
+      line-height: 143%;
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 40px;
     }
     .about__list-link {
       font-size: 18px;
-      line-height: 56%;
+      line-height: 156%;
     }
   }

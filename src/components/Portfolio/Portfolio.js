@@ -9,7 +9,7 @@ function Portfolio() {
         <li class="about__list-item">
           <Link
             to="https://github.com/eknyle/how-to-learn"
-            className="about__list-link"
+            className="about__list-link" target="_blank"
           >
             Статичный&#160;сайт
           </Link>

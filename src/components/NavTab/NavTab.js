@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function NavTab({handleClose}) {
   return (
-    <div  className="navtab"  aria-label="navtab">
+    <div  className="navtab">
       <ul className="navtab__list" id="navtab">
         <li className="navtab__item">
           <Link className="navtab__link" to="/" onClick={handleClose} >

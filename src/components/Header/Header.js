@@ -1,23 +1,27 @@
 import { Link } from "react-router-dom";
 
-function Header({ onBurgerClick,loggedIn  }) {
+function Header({ onBurgerClick, loggedIn }) {
   const authorizedListClass = `header__list ${
-    loggedIn ? "header__list_authorized" : "header_disabled"
+    loggedIn ? "header__list_authorized" : "header__list_disabled"
   }`;
   const unauthorizedListClass = `header__list ${
-    loggedIn ? "header_disabled" : ""
+    loggedIn ? "header__list_disabled" : ""
   }`;
   const containerClass = `header__container ${
     loggedIn ? "header__container_authorized" : ""
   }`;
   const headerClass = `header ${loggedIn ? "header_authorized" : ""}`;
   const linkClass = `header__link ${loggedIn ? "header__link_authorized" : ""}`;
-  const burgerClass = `${loggedIn ? "header__burger" : "header_disabled"}`;
+  const burgerClass = `${
+    loggedIn ? "header__burger" : "header__burger header__burger_disabled"
+  }`;
 
   return (
     <header className={headerClass}>
       <div className={containerClass}>
-        <div className="header__logo"></div>
+        <Link className="header__link" to="/">
+          <div className="header__logo"></div>
+        </Link>
         <ul className={authorizedListClass}>
           <li className="header__list-item">
             <Link className={linkClass} to="/movies">
@@ -33,12 +37,7 @@ function Header({ onBurgerClick,loggedIn  }) {
         <ul className={authorizedListClass}>
           <li className="header__list-item header__list-item_authorized">
             <Link className="header__link-profile" to="/profile">
-              Аккаунт
-            </Link>
-          </li>
-          <li className="header__list-item">
-            <Link className={linkClass} to="/profile">
-              <div className="header__profile"></div>
+              Аккаунт<div className="header__profile"></div>
             </Link>
           </li>
         </ul>

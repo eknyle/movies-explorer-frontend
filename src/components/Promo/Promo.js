@@ -2,7 +2,7 @@
 function Promo() {
 
   return (
-    <main className="landing" aria-label="landing">
+    <section className="landing" aria-label="landing">
     <div className="landing__container">
       <h1 className="landing__title">Учебный проект студента факультета Веб&#8209;разработки.
       </h1>
@@ -11,7 +11,7 @@ function Promo() {
       <button className="landing__button" >Узнать больше</button>
       <div className="landing__logo"></div>
     </div>
-  </main>
+  </section>
   );
 }
 

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 function MoviesCard({ card, onCardLike,isSaved,handleCardDelete}) {
   
-  let cardLikeStyle = `${ card.cardLiked ? "card__like_liked" : "card__like" }`;
-  cardLikeStyle = `${ isSaved ? "card__like_dislike " : cardLikeStyle }`;
+  let cardLikeStyle = `${ card.cardLiked ? "card__liked" : "card__like" }`;
+  cardLikeStyle = `${ isSaved ? "card__disliked" : cardLikeStyle }`;
 
   function handleLikeClick() {
     if (isSaved){

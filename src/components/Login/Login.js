@@ -17,14 +17,16 @@ function Login({ onLogin }) {
   }
   function handleLogin(e) {
     e.preventDefault();
-    if (!email || !password ) {
+    if (!email || !password) {
       return;
     }
-    onLogin(password,  email, handleLoginCallback);
+    onLogin(password, email, handleLoginCallback);
   }
   return (
     <main className="login" id="login">
-      <div className="login__logo"></div>
+      <Link className="login__link" to="/">
+        <div className="login__logo"></div>
+      </Link>
       <h2 className="login__title">Рады видеть!</h2>
       <form className="login__form" onSubmit={handleLogin}>
         <p className="login__label">E-mail</p>
@@ -52,11 +54,7 @@ function Login({ onLogin }) {
           onChange={handlePasswordChange}
         />
         <p className="login__error">Что-то пошло не так...</p>
-        <button
-          type="submit"
-          className="login__button"
-          title="Войти"
-        >
+        <button type="submit" className="login__button" title="Войти">
           Войти
         </button>
         <p className="login__description">

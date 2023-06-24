@@ -131,6 +131,12 @@
   align-items: center;
   color: #000000;
 }
+.header__list_disabled {
+  display: none;
+}
+.header__burger_disabled {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .header__container {
     padding: 0 min(4%, 30px);

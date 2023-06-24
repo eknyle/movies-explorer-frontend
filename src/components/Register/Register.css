@@ -1,5 +1,5 @@
 .register {
-  padding: 70px min(35%, 442px);
+  padding: 70px min(22%, 442px);
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -33,7 +33,6 @@
   border: none;
   margin: 0 0 20px 0;
   padding: 15px 15px;
-  outline: none;
   width: 100%;
   box-sizing: border-box;
 }
@@ -104,13 +103,13 @@
 }
 @media screen and (max-width: 768px) {
   .register {
-    padding: 232px min(24%, 186px);
+    padding: min(35%, 232px) min(9%, 186px);
   }
   .register__title {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 343px) {
+@media screen and (max-width: 480px) {
   .register__logo {
     align-self: center;
   }
