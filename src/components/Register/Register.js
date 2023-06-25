@@ -28,7 +28,7 @@ function Register({ onRegister }) {
   }
   return (
     <main className="register" id="register">
-      <Link className="register__link" to="/">
+      <Link className="register__logo-link" to="/">
         <div className="register__logo"></div>
       </Link>
       <h2 className="register__title">Добро пожаловать!</h2>
@@ -37,7 +37,6 @@ function Register({ onRegister }) {
         <input
           className="register__input register__input_type_name"
           id="userName"
-          type="name"
           required
           minLength="6"
           maxLength="40"
@@ -59,7 +58,7 @@ function Register({ onRegister }) {
         />
         <p className="register__label">Пароль</p>
         <input
-          className="register__input"
+          className="register__input register__input_type_password"
           id="password"
           type="password"
           required

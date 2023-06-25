@@ -1,6 +1,6 @@
 .profile {
   margin: 0 auto;
-  padding: 74px min(33%, 435px) 0 min(33%, 435px);
+  padding: 74px min(34%, 435px) 0 min(34%, 435px);
   width: 100%;
   max-width: 1280px;
   display: flex;
@@ -40,9 +40,11 @@
   padding: 0;
   margin: 0 0 16px 0;
 }
+.profile__label:last-child{
+  margin: 0;
+}
 .profile__label_type_name {
   grid-area: name;
-
 }
 .profile__label_type_email {
   grid-area: email;
@@ -50,21 +52,21 @@
 .profile__input_type_name {
   grid-area: nameInput;
 }
-.profile__input_disabled{
-    pointer-events: none;
+.profile__input_disabled {
+  pointer-events: none;
 }
-.profile__line{
-    padding: 0;
-    margin: 0 0 17px 0;
-    height: 1px;
-    background: #E8E8E8;
-    width: 100%;
-    grid-area: line;
+.profile__line {
+  padding: 0;
+  margin: 0 0 17px 0;
+  height: 1px;
+  background: #e8e8e8;
+  width: 100%;
+  grid-area: line;
 }
 .profile__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(7, min-content);
   grid-template-areas:
     "name nameInput"
     "line line"
@@ -97,10 +99,13 @@
   justify-self: center;
   background-color: transparent;
   border: none;
-  margin: 220px 0 16px 0;
+  margin: 204px 0 16px 0;
 }
 .profile__save-button:hover {
   opacity: 0.6;
+}
+.profile__save-button_disabled {
+  display: none;
 }
 .profile__edit-button {
   font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
@@ -118,7 +123,10 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  margin: 220px 0 16px 0;
+  margin: 204px 0 16px 0;
+}
+.profile__edit-button_disabled {
+  display: none;
 }
 .profile__edit-button:hover {
   opacity: 0.6;
@@ -152,24 +160,32 @@
     margin: 0 0 96px 0;
   }
   .profile__edit-button {
-    margin: 210px 0 16px 0;
+    margin: 194px 0 16px 0;
   }
   .profile__save-button {
-    margin: 210px 0 16px 0;
+    margin: 194px 0 16px 0;
   }
 }
 @media screen and (max-width: 343px) {
   .profile {
     margin: 0;
-    padding: 70px min(9%, 30px) 0 min(9%, 30px);
+    padding: 70px min(9%, 30px) 40px min(9%, 30px);
   }
   .profile__title {
     margin: 0 0 80px 0;
   }
   .profile__edit-button {
-    margin: 379px 0 16px 0;
+    margin: 360px 0 16px 0;
+    font-size: 12px;
+    line-height: 15px;
   }
   .profile__save-button {
-    margin: 379px 0 16px 0;
+    margin: 360px 0 16px 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .profile__logout-button {
+    font-size: 12px;
+    line-height: 15px;
   }
 }

@@ -24,7 +24,7 @@ function Login({ onLogin }) {
   }
   return (
     <main className="login" id="login">
-      <Link className="login__link" to="/">
+      <Link className="login__logo-link" to="/">
         <div className="login__logo"></div>
       </Link>
       <h2 className="login__title">Рады видеть!</h2>
@@ -60,7 +60,7 @@ function Login({ onLogin }) {
         <p className="login__description">
           Ещё не зарегистрированы?
           <Link className="login__link" to="/signup">
-            Войти
+            Регистрация
           </Link>
         </p>
       </form>

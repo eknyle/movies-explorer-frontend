@@ -110,7 +110,7 @@
   .card__description {
     box-sizing: border-box;
     margin: 0;
-    padding: 0 36px 0 12px;
+    padding: 0 16px 0 12px;
     width: 300px;
     grid-area: description;
     align-self: center;
@@ -150,5 +150,13 @@
     align-self: center;
     width: 300px;
     height: 168px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card {
+    margin: 0 0 20px 0;
+  }
+  .card:last-child {
+    margin: 0 0 20px 0;
   }
 }

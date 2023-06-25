@@ -2,15 +2,15 @@ import React, { useState } from "react";
 
 function Profile({ userName, email, onEditProfile }) {
   const [isEdit, setEdit] = useState(false);
-  const [userEmail, setEmail] = useState( email );
-  const [name, setUserName] = useState( userName);
+  const [userEmail, setEmail] = useState(email);
+  const [name, setUserName] = useState(userName);
   const [onEditProfileError, setOnEditProfileError] = useState("");
 
   const editButtonStyle = `profile__edit-button ${
-    isEdit ? "profile_disabled" : ""
+    isEdit ? "profile__edit-button_disabled" : ""
   }`;
   const saveButtonStyle = `profile__save-button ${
-    isEdit ? "" : "profile_disabled"
+    isEdit ? "" : "profile__save-button_disabled"
   }`;
 
   function handleEmailChange(e) {
@@ -45,7 +45,6 @@ function Profile({ userName, email, onEditProfile }) {
         <input
           className="profile__input profile__input_type_name profile__input_disabled"
           id="userName"
-          type="name"
           required
           minLength="6"
           maxLength="40"
@@ -54,7 +53,9 @@ function Profile({ userName, email, onEditProfile }) {
           onChange={handleNameChange}
         />
         <div className="profile__line"></div>
-        <label className="profile__label profile__label_type_email">E-mail</label>
+        <label className="profile__label profile__label_type_email">
+          E-mail
+        </label>
         <input
           className="profile__input profile__input_type_email  profile__input_disabled"
           id="userEmail"

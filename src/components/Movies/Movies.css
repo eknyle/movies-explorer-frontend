@@ -33,19 +33,19 @@
 @media screen and (max-width: 768px) {
   .movies {
     margin: 0;
-    padding: min(18%, 60px) min(18%, 30px) 30px min(18%, 70px);
+    padding: 0 min(18%, 36px) 80px min(18%, 30px);
   }
 }
 
 @media screen and (max-width: 550px) {
   .movies {
     margin: 0;
-    padding: min(18%, 40px) min(18%, 10px) 20px min(18%, 10px);
+    padding: min(18%, 40px) min(18%, 10px) 80px min(18%, 10px);
   }
 }
 @media screen and (max-width: 320px) {
   .movies__button {
-    margin: 50px 0 40px 0;
+    margin: 50px 0 0 0;
     width: 240px;
   }
 }

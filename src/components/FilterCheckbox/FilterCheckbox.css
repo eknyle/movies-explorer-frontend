@@ -9,7 +9,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -48,4 +48,13 @@
   }
 }
 @media screen and (max-width: 343px) {
+  .filter {
+    padding: 35px 0 45px 0;
+    font-size: 11px;
+    line-height: 164%;
+  }
+  .filter__label{
+    margin: 0;
+    padding: 0;
+  }
 }

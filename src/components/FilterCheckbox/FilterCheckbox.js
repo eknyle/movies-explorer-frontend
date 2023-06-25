@@ -9,7 +9,7 @@ function FilterCheckbox() {
   return (
     <div className="filter">
         <div className={checkboxStyle} onClick={handleChecked} ></div>
-        <span>Короткометражки</span>
+        <span className="filter__label">Короткометражки</span>
     </div>
   )
 }
