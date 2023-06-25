@@ -51,7 +51,7 @@
 }
 .technology__description {
   padding: 0;
-  margin: 0 0 100px 0;
+  margin: 0 min(28%,340px) 100px min(28%,340px);
   white-space: pre-line;
   font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
   font-style: normal;
