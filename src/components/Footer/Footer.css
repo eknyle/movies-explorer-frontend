@@ -1,0 +1,104 @@
+.footer {
+    padding: 0;
+    width: 100%;
+    background-color: #fafafa;
+  }
+  .footer__container {
+    padding: 79px min(18%, 70px) 20px min(18%, 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fafafa;
+  }
+  .footer__subheader {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #a0a0a0;
+  }
+  .footer__line {
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: min(100%, 1140px);
+    height: 1px;
+    background-color: #e8e8e8;
+  }
+  .footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__link {
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  .footer__list-item {
+    font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+  .footer__list-item:first-child {
+    margin-right: 0;
+  }
+  .footer__list-item:last-child {
+    margin-right: 0;
+  }
+  .footer__list-item_copy {
+    flex: 1;
+  }
+  @media screen and (max-width: 768px) {
+    .footer__container {
+      padding: 79px min(4%, 30px) 20px min(4%, 70px);
+      background-color: #ffffff;
+    }
+  }
+  @media screen and (max-width: 343px) {
+    .footer__container {
+      padding: 79px min(4%, 30px) 0 min(4%, 70px);
+      background-color: #ffffff;
+      justify-content: center;
+    }
+    .footer__line {
+      margin-bottom: 18px;
+    }
+    .footer__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer__list-item {
+      font-size: 12px;
+      line-height: 15px;
+      color: #a0a0a0;
+      margin: 12px 0 0 0;
+    }
+    .footer__list-item_copy {
+      order: 10;
+      margin: 30px 0 0 0;
+    }
+  }
+  

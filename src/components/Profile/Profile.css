@@ -1,0 +1,191 @@
+.profile {
+  margin: 0 auto;
+  padding: 74px min(34%, 435px) 0 min(34%, 435px);
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.profile__title {
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  padding: 0;
+  margin: 0 0 123px 0;
+}
+.profile__input {
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  color: #000000;
+  border: none;
+  margin: 0 0 16px 0;
+}
+.profile__label {
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+.profile__label:last-child{
+  margin: 0;
+}
+.profile__label_type_name {
+  grid-area: name;
+}
+.profile__label_type_email {
+  grid-area: email;
+}
+.profile__input_type_name {
+  grid-area: nameInput;
+}
+.profile__input_disabled {
+  pointer-events: none;
+}
+.profile__line {
+  padding: 0;
+  margin: 0 0 17px 0;
+  height: 1px;
+  background: #e8e8e8;
+  width: 100%;
+  grid-area: line;
+}
+.profile__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, min-content);
+  grid-template-areas:
+    "name nameInput"
+    "line line"
+    "email emailInput"
+    "error error"
+    "editButton editButton"
+    "saveButton saveButton"
+    "logoutButton logoutButton";
+}
+.profile__error {
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ee3465;
+  grid-area: error;
+}
+.profile__save-button {
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  grid-area: saveButton;
+  justify-self: center;
+  background-color: transparent;
+  border: none;
+  margin: 204px 0 16px 0;
+}
+.profile__save-button:hover {
+  opacity: 0.6;
+}
+.profile__save-button_disabled {
+  display: none;
+}
+.profile__edit-button {
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  grid-area: editButton;
+  justify-self: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 204px 0 16px 0;
+}
+.profile__edit-button_disabled {
+  display: none;
+}
+.profile__edit-button:hover {
+  opacity: 0.6;
+}
+.profile__logout-button {
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #ee3465;
+  cursor: pointer;
+  grid-area: logoutButton;
+  justify-self: center;
+  background-color: transparent;
+  border: none;
+}
+.profile__logout-button:hover {
+  opacity: 0.6;
+}
+.profile_disabled {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .profile {
+    margin: 0;
+    padding: 236px min(23%, 179px) 0 min(23%, 179px);
+  }
+  .profile__title {
+    margin: 0 0 96px 0;
+  }
+  .profile__edit-button {
+    margin: 194px 0 16px 0;
+  }
+  .profile__save-button {
+    margin: 194px 0 16px 0;
+  }
+}
+@media screen and (max-width: 343px) {
+  .profile {
+    margin: 0;
+    padding: 70px min(9%, 30px) 40px min(9%, 30px);
+  }
+  .profile__title {
+    margin: 0 0 80px 0;
+  }
+  .profile__edit-button {
+    margin: 360px 0 16px 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .profile__save-button {
+    margin: 360px 0 16px 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .profile__logout-button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

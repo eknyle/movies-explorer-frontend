@@ -1,0 +1,122 @@
+.search-form {
+  padding: 70px min(18%, 70px) 10px min(18%, 70px);
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  background-color: #ffffff;
+  justify-content: center;
+}
+.search-form__container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1140px;
+  min-width: 300px;
+  height: 72px;
+  margin: 0 0 69px 0;
+  padding: 0 30px 0 19px;
+  background: #f9f9f9;
+  border-radius: 9px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.search-form__bottom-border {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+.search-form__input {
+  flex: 1;
+  border: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  margin: 25px 0;
+  padding: 0;
+  font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+  color: #a0a0a0;
+  grid-area: input;
+}
+.search-form__find-image {
+  width: 34px;
+  height: 34px;
+  margin: 19px 10px 19px 0;
+  background-image: url(../../images/icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-area: image;
+}
+.search-form__submit {
+  width: 80px;
+  min-width: 80px;
+  height: 34px;
+  margin: 19px 30px 19px 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../images/find.svg);
+  border: 0;
+  grid-area: button;
+}
+.search-form__submit:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+  .search-form {
+    padding: 80px min(4%, 30px) 0;
+  }
+  .search-form__submit {
+    margin: 19px 19px 19px 0;
+  }
+  .search-form__container {
+    padding: 0 20px 0 19px;
+    margin-bottom: 109px;
+  }
+  .search-form__bottom-border {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .search-form__container {
+    padding: 0 0 0 19px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "image input button"
+      "filter filter filter";
+  }
+  .search-form__submit {
+    margin: 19px 19px 19px 0;
+  }
+}
+@media screen and (max-width: 343px) {
+  .search-form {
+    padding: 80px min(2.9%, 10px) 0 min(2.9%, 10px);
+  }
+  .search-form__container {
+    margin-bottom: 109px;
+  }
+  .search-form__input {
+    font-size: 14px;
+    line-height: 143%;
+  }
+  .search-form__find-image {
+    display: none;
+  }
+}
