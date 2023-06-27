@@ -20,8 +20,6 @@
   .about__list-item {
     margin: 0;
     padding: 20px 0 19px 0;
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid #e8e8e8;
     align-items: center;
   }
@@ -33,6 +31,9 @@
     border-bottom: 0;
   }
   .about__list-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
     font-style: normal;
@@ -51,6 +52,7 @@
     padding: 0;
     width: 18px;
     height: 17px;
+    align-self:center;
   }
   @media screen and (max-width: 768px) {
     .about__portfolio-title {

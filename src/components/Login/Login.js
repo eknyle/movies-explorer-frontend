@@ -29,30 +29,34 @@ function Login({ onLogin }) {
       </Link>
       <h2 className="login__title">Рады видеть!</h2>
       <form className="login__form" onSubmit={handleLogin}>
-        <p className="login__label">E-mail</p>
-        <input
-          className="login__input login__input_type_email"
-          id="userEmail"
-          type="email"
-          required
-          minLength="3"
-          maxLength="40"
-          placeholder="E-mail"
-          value={email}
-          onChange={handleEmailChange}
-        />
-        <p className="login__label">Пароль</p>
-        <input
-          className="login__input"
-          id="password"
-          type="password"
-          required
-          minLength="3"
-          maxLength="40"
-          placeholder="Пароль"
-          value={password}
-          onChange={handlePasswordChange}
-        />
+        <label className="login__label">
+          E-mail
+          <input
+            className="login__input"
+            id="userEmail"
+            type="email"
+            required
+            minLength="3"
+            maxLength="40"
+            placeholder="E-mail"
+            value={email}
+            onChange={handleEmailChange}
+          />
+        </label>
+        <label className="login__label">
+          Пароль
+          <input
+            className="login__input"
+            id="password"
+            type="password"
+            required
+            minLength="3"
+            maxLength="40"
+            placeholder="Пароль"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </label>
         <p className="login__error">Что-то пошло не так...</p>
         <button type="submit" className="login__button" title="Войти">
           Войти

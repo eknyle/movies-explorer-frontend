@@ -91,9 +91,6 @@
   }
 }
 @media screen and (max-width: 650px) {
-  .search-form {
-    padding: 0 min(4%, 30px);
-  }
   .search-form__container {
     padding: 0 0 0 19px;
     box-sizing: border-box;

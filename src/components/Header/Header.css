@@ -47,13 +47,16 @@
   margin-right: 0px;
 }
 .header__button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   width: 76px;
   height: 32px;
   border-radius: 3px;
   border: 0;
-  background-position: center;
   background-color: #2be080;
   border-color: #2be080;
   cursor: pointer;
@@ -112,13 +115,13 @@
   margin: 0;
 }
 .header__profile {
-  margin: 0;
+  margin: -6px 0 -5px 0;
   width: 30px;
   height: 30px;
   background: #f9f9f9;
   border-radius: 6px;
   background-image: url(../../images/profile.svg);
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .header__link-profile {

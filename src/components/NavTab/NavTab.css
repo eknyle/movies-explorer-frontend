@@ -52,6 +52,11 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .navtab__link_type_profile {
+    margin: 621px 0 0 0;
+  }
+}
 @media screen and (max-width: 320px) {
   .navtab {
     padding: 144px 10px 0 10px;
@@ -60,7 +65,7 @@
     margin: 0 0 24px 0;
   }
   .navtab__link_type_profile {
-    margin: calc(100vh - 55px) 0 55px 0;    
+    margin: 444px 0 55px 0;
     padding: 0;
     display: flex;
     flex-flow: row nowrap;

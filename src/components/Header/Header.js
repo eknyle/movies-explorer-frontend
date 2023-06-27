@@ -16,6 +16,7 @@ function Header({ onBurgerClick, loggedIn }) {
     loggedIn ? "header__burger" : "header__burger header__burger_disabled"
   }`;
 
+ 
   return (
     <header className={headerClass}>
       <div className={containerClass}>
@@ -53,9 +54,9 @@ function Header({ onBurgerClick, loggedIn }) {
             </Link>
           </li>
           <li className="header__list-item">
-            <button className="header__button" onClick="/signin">
+            <Link className="header__button"  to="/signin">
               Войти
-            </button>
+            </Link>
           </li>
         </ul>
       </div>

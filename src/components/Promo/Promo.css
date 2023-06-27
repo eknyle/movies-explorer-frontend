@@ -12,12 +12,12 @@
     margin: 0 auto;
     background-color: #5c5c5c;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto min(14%,190px) auto;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-      "title right"
-      "description right"
-      "button right";
+      "title offset right"
+      "description offset right"
+      "button  offset right";
   }
   .landing__title {
     padding: 0;
@@ -69,7 +69,7 @@
     opacity: 0.6;
   }
   .landing__logo {
-    margin: 0px 0px 145px min(14%,190px);
+    margin: 0px 0px 145px 0;
     padding: 0;
     background-image: url(../../images/landing-logo.svg);
     min-width: 210px;

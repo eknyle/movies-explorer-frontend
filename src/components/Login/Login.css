@@ -16,6 +16,7 @@
   line-height: 29px;
   color: #000000;
   margin: 0 0 40px 0;
+  padding: 0;
 }
 .login__label {
   font-family: "Inter", "Suisse Intl", Arial, Helvetica, sans-serif;
@@ -24,14 +25,14 @@
   font-size: 10px;
   line-height: 12px;
   color: #a0a0a0;
-  margin: 0 0 10px 0;
+  margin: 0;
   padding: 0;
 }
 .login__input {
   background: #f9f9f9;
   border-radius: 8px;
   border: none;
-  margin: 0 0 20px 0;
+  margin: 10px 0 20px 0;
   padding: 15px 15px;
   width: 100%;
   box-sizing: border-box;
@@ -56,12 +57,15 @@
   justify-self: center;
   text-align: center;
   color: #ffffff;
-  width: 396px;
+  width: 100%;
+  min-width: 260px;
   height: 45px;
   background-color: #2be080;
   border-radius: 3px;
   border: none;
   margin: 75px 0 16px 0;
+  padding: 0;
+  align-self: center;
 }
 .login__button:hover {
   opacity: 0.6;
@@ -86,6 +90,7 @@
   color: #a0a0a0;
   margin: 0;
   padding: 0;
+  align-self: center;
 }
 .login__logo-link {
   cursor: pointer;
@@ -108,13 +113,23 @@
 }
 @media screen and (max-width: 768px) {
   .login {
-    padding: min(35%, 232px) min(9%, 186px);
+    padding: min(35%, 232px) 0;
   }
   .login__title {
     margin-bottom: 40px;
   }
+  .login__button {
+    align-self: center;
+  }
+  .login__description {
+    align-self: center;
+  }
 }
-@media screen and (max-width: 343px) {
+@media screen and (max-width: 480px) {
+  .login__form {
+    align-self: center;
+    width: 260px;
+  }
   .login__logo-link {
     align-self: center;
   }
@@ -129,7 +144,9 @@
     line-height: 15px;
   }
   .login {
-    padding: 56px min(9%, 30px) 30px min(9%, 30px);
+    margin: 0 auto;
+    padding: 56px 0 30px 0;
+    /* min(8vw, 30px) 30px min(8vw, 30px); */
   }
   .login__title {
     margin-bottom: 80px;
@@ -139,7 +156,7 @@
     margin: 0;
   }
   .login__button {
-    width: 260px;
+    align-self: center;
     margin: 230px 0 14px 0;
   }
   .login__description {
